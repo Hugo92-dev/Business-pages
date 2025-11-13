@@ -81,6 +81,29 @@ body {
     border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0, 131, 2, 0.3);
     z-index: 10;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.best-badge::after {
+    content: '👑';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 18px;
+    opacity: 0;
+    transform: scale(0) rotate(-15deg);
+    transition: all 0.3s ease;
+}
+
+.best-badge:hover::after {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.best-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 131, 2, 0.4);
 }
 
 .badge-icon {

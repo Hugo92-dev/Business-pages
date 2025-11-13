@@ -34,7 +34,8 @@
       "Bash(git commit -m \"Add ''Le meilleur bookmaker'' badge at top of first card with crown icon and gold gradient\")",
       "Bash(git commit -m \"Update best bookmaker badge: soccer ball icon, green color (#008302), tighter spacing\")",
       "Bash(git commit -m \"Separate rank numbers into dedicated first column, centered vertically and horizontally\")",
-      "Bash(git commit -m \"Position best bookmaker badge in absolute top-left corner of card, outside column layout\")"
+      "Bash(git commit -m \"Position best bookmaker badge in absolute top-left corner of card, outside column layout\")",
+      "Bash(git commit -m \"Add subtle hover effect on best bookmaker badge: crown emoji appears on top-right corner\")"
     ],
     "deny": [],
     "ask": []
