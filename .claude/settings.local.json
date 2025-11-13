@@ -8,7 +8,10 @@
       "Bash(git push -u origin master)",
       "Bash(git add .claude/settings.local.json)",
       "Bash(git commit -m \"Update local settings\")",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(git add index.html)",
+      "Bash(git commit -m \"Add links to JackpotCity Review and Play now button\")",
+      "Bash(git commit -m \"Merge columns 1 and 2: add minimalist round badge above logo\")"
     ],
     "deny": [],
     "ask": []
