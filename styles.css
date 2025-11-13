@@ -51,7 +51,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 24px;
-    align-items: start;
+    align-items: center;
 }
 
 /* ----- LEFT COLUMN: LOGO ----- */
@@ -60,7 +60,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    align-self: center;
 }
 
 .rank-number {
@@ -265,7 +264,6 @@ body {
     gap: 10px;
     justify-content: center;
     align-items: stretch;
-    align-self: center;
 }
 
 /* ----- PROMO CODE BOX ----- */
