@@ -629,30 +629,180 @@ body {
 }
 
 @media (max-width: 768px) {
-    .coupon-header {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
     .coupon-card {
         padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
     }
 
     .best-badge {
-        top: 12px;
-        left: 12px;
-        padding: 5px 10px;
-        gap: 4px;
+        display: none;
+    }
+
+    .coupon-header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .rank-column {
+        display: none;
+    }
+
+    /* Logo en premier (haut) */
+    .coupon-logo-section {
+        order: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .casino-logo {
+        width: 140px;
+        height: 140px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Rating en deuxième */
+    .coupon-main-info {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .casino-name {
+        display: none;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review-link {
+        display: none;
+    }
+
+    /* Welcome offer en troisième */
+    .welcome-offer {
+        order: 3;
+        padding: 20px;
+        background: #f3f4f6;
+        border-radius: 12px;
+    }
+
+    .offer-label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .offer-amount-large {
+        font-size: 36px;
+    }
+
+    /* Features en quatrième */
+    .features-list {
+        order: 4;
+        gap: 14px;
+        align-items: flex-start;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .feature-item {
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .check-icon {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    .feature-text {
+        white-space: normal;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /* Actions en dernier */
+    .coupon-actions {
+        order: 5;
+        gap: 12px;
+    }
+
+    .promo-code-box {
+        padding: 16px;
+        order: 1;
+    }
+
+    .promo-label {
+        font-size: 12px;
+    }
+
+    .promo-code {
+        font-size: 18px;
+    }
+
+    .btn-play-now {
+        padding: 18px 32px;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        order: 2;
+        border-radius: 8px;
+    }
+
+    .btn-more-info {
+        padding: 16px 20px;
+        font-size: 15px;
+        width: 100%;
+        order: 3;
+    }
+
+    .coupon-details {
+        padding-top: 20px;
+    }
+
+    .details-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        padding: 16px 0;
+    }
+
+    .coupon-card {
+        margin-bottom: 16px;
+    }
+
+    .best-badge {
+        padding: 8px 12px;
     }
 
     .badge-text {
         font-size: 10px;
     }
 
-    .rank-badge {
-        width: 44px;
-        height: 44px;
-        font-size: 18px;
+    .badge-icon {
+        font-size: 14px;
+    }
+
+    .coupon-header {
+        padding: 16px;
     }
 
     .casino-logo {
@@ -660,69 +810,76 @@ body {
         height: 120px;
     }
 
-    .details-content {
-        grid-template-columns: 1fr;
-        gap: 24px;
+    .offer-amount-large {
+        font-size: 28px;
     }
 
-    .casino-name {
-        font-size: 22px;
-    }
-
-    .offer-amount,
-    .offer-jackpot {
-        font-size: 20px;
-    }
-
-    .offer-subtitle {
-        font-size: 14px;
+    .features-list {
+        padding: 12px;
+        gap: 10px;
     }
 
     .feature-text {
-        white-space: normal;
-    }
-}
-
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5rem;
+        font-size: 12px;
     }
 
-    .coupon-card {
-        padding: 16px;
+    .feature-text strong {
+        font-size: 10px;
     }
 
-    .coupon-logo-section {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
+    .coupon-actions {
+        padding: 0 16px 16px 16px;
     }
 
-    .casino-logo {
-        width: 140px;
-        height: 140px;
+    .promo-code-box {
+        padding: 14px;
     }
 
-    .casino-name {
-        font-size: 20px;
+    .promo-label {
+        font-size: 10px;
     }
 
-    .offer-amount,
-    .offer-jackpot {
-        font-size: 18px;
-    }
-
-    .offer-subtitle {
-        font-size: 13px;
+    .promo-code {
+        font-size: 16px;
     }
 
     .btn-play-now {
-        font-size: 14px;
-        padding: 12px 24px;
+        padding: 16px 28px;
+        font-size: 16px;
     }
 
     .btn-more-info {
+        padding: 14px 18px;
         font-size: 14px;
-        padding: 10px 16px;
+    }
+
+    .coupon-details {
+        padding: 0 16px 16px 16px;
+    }
+
+    .pros-cons h3,
+    .exclusive-bonus h3,
+    .payment-options h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .pro-item span:last-child {
+        font-size: 14px;
+    }
+
+    .mobile-link {
+        font-size: 14px;
+    }
+
+    .mobile-icon-img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .payment-logo {
+        font-size: 11px;
+        padding: 10px 14px;
+        min-width: 70px;
     }
 }
