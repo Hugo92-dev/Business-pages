@@ -3,7 +3,12 @@
     "allow": [
       "Bash(git init)",
       "Bash(git remote add origin https://github.com/Hugo92-dev/Business-pages.git)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd casino coupon card prototype with expandable details\n\n- Single-line horizontal layout with logo, casino info, welcome offer, features, and action buttons\n- Promo code box with click-to-copy functionality (COVERS)\n- Expandable details section with pros/cons, exclusive bonus, and payment options\n- Responsive design for desktop, tablet, and mobile\n- Vanilla HTML/CSS/JS with no external dependencies\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push -u origin master)",
+      "Bash(git add .claude/settings.local.json)",
+      "Bash(git commit -m \"Update local settings\")",
+      "Bash(git push)"
     ],
     "deny": [],
     "ask": []
