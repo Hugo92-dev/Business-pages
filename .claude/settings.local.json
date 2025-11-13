@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init)",
+      "Bash(git remote add origin https://github.com/Hugo92-dev/Business-pages.git)",
+      "Bash(git add .)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
