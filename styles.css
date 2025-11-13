@@ -49,12 +49,19 @@ body {
 /* ===== CARD HEADER (Main Content) ===== */
 .coupon-header {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     gap: 24px;
     align-items: center;
 }
 
-/* ----- LEFT COLUMN: LOGO ----- */
+/* ----- RANK COLUMN ----- */
+.rank-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- LOGO COLUMN ----- */
 .coupon-logo-section {
     display: flex;
     flex-direction: column;
