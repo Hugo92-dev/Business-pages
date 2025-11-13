@@ -268,7 +268,7 @@ body {
 
 /* ----- PROMO CODE BOX ----- */
 .promo-code-box {
-    border: 2px dashed #ff6b1a;
+    border: 2px dashed #008302;
     border-radius: 8px;
     padding: 12px 16px;
     text-align: center;
@@ -278,8 +278,8 @@ body {
 }
 
 .promo-code-box:hover {
-    background: #fff7ed;
-    border-color: #ea580c;
+    background: #e6f7e6;
+    border-color: #006b02;
 }
 
 .promo-code-box:active {
@@ -300,12 +300,12 @@ body {
 }
 
 .promo-code-box.copied {
-    background: #dcfce7;
-    border-color: #10b981;
+    background: #d4f4dd;
+    border-color: #008302;
 }
 
 .promo-code-box.copied .promo-label {
-    color: #10b981;
+    color: #008302;
 }
 
 .promo-code-box.copied .promo-label::after {
