@@ -178,15 +178,19 @@ body {
 .welcome-offer {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
     justify-content: center;
+    background: #f3f4f6;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .offer-label {
-    font-size: 13px;
-    color: #9ca3af;
-    font-weight: 400;
-    margin-bottom: 4px;
+    font-size: 15px;
+    color: #4b5563;
+    font-weight: 500;
+    margin-bottom: 2px;
 }
 
 .offer-amount {
@@ -211,9 +215,9 @@ body {
 }
 
 .offer-amount-large {
-    font-size: 40px;
-    font-weight: 800;
-    color: #1a1a1a;
+    font-size: 48px;
+    font-weight: 900;
+    color: #f97316;
     line-height: 1;
 }
 

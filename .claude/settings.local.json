@@ -22,7 +22,8 @@
       "Bash(git commit -m \"Add dynamic sports-style badge: bold white number on red-orange gradient with rotation effect\")",
       "Bash(git commit -m \"Add second casino coupon block (NSN) without promo code, centered buttons only\")",
       "Bash(git commit -m \"Reduce spacing between Welcome offer and Features columns for better alignment\")",
-      "Bash(git commit -m \"Simplify Welcome offer: display only 180€ for JackpotCity and 100€ for NSN with large font\")"
+      "Bash(git commit -m \"Simplify Welcome offer: display only 180€ for JackpotCity and 100€ for NSN with large font\")",
+      "Bash(git commit -m \"Add eye-catching bonus box design: gray background with large orange amount (180€/100€)\")"
     ],
     "deny": [],
     "ask": []
