@@ -59,7 +59,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
+    align-self: center;
 }
 
 .rank-number {
@@ -264,6 +265,7 @@ body {
     gap: 10px;
     justify-content: center;
     align-items: stretch;
+    align-self: center;
 }
 
 /* ----- PROMO CODE BOX ----- */

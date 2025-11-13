@@ -25,7 +25,8 @@
       "Bash(git commit -m \"Simplify Welcome offer: display only 180€ for JackpotCity and 100€ for NSN with large font\")",
       "Bash(git commit -m \"Add eye-catching bonus box design: gray background with large orange amount (180€/100€)\")",
       "Bash(git commit -m \"Change bonus amount color from orange to red (matching Play now button)\")",
-      "Bash(git commit -m \"Update promo code box colors: green dashed border (#008302) with green hover and copied states\")"
+      "Bash(git commit -m \"Update promo code box colors: green dashed border (#008302) with green hover and copied states\")",
+      "Bash(git commit -m \"Vertically center logo column and buttons column for better alignment\")"
     ],
     "deny": [],
     "ask": []
