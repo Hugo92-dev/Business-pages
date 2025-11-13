@@ -70,6 +70,9 @@ body {
 }
 
 .best-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -77,6 +80,7 @@ body {
     padding: 6px 12px;
     border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0, 131, 2, 0.3);
+    z-index: 10;
 }
 
 .badge-icon {
