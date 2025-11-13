@@ -572,6 +572,16 @@ body {
     min-width: 90px;
 }
 
+.terms-text {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.terms-text p {
+    margin: 0;
+}
+
 /* ----- TRUST BADGES ----- */
 .trust-badges {
     display: flex;
