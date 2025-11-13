@@ -85,23 +85,6 @@ body {
     cursor: pointer;
 }
 
-.best-badge::after {
-    content: '👑';
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    font-size: 18px;
-    opacity: 0;
-    transform: translateY(-55%) scale(0) rotate(-15deg);
-    transition: all 0.3s ease;
-    margin-left: 8px;
-}
-
-.best-badge:hover::after {
-    opacity: 1;
-    transform: translateY(-55%) scale(1) rotate(0deg);
-}
-
 .best-badge:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 131, 2, 0.4);
