@@ -30,7 +30,8 @@
       "Bash(git commit -m \"Fix alignment: set columns 2-4 to top, keep columns 1 and 5 centered\")",
       "Bash(git commit -m \"Restore center alignment for all columns\")",
       "Bash(git commit -m \"Change promo code from COVERS to ALLEZ L''OM\")",
-      "Bash(git commit -m \"Update JackpotCity rating to 5/5 with all stars filled\")"
+      "Bash(git commit -m \"Update JackpotCity rating to 5/5 with all stars filled\")",
+      "Bash(git commit -m \"Add ''Le meilleur bookmaker'' badge at top of first card with crown icon and gold gradient\")"
     ],
     "deny": [],
     "ask": []
