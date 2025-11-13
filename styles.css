@@ -520,6 +520,32 @@ body {
     color: #1f2937;
 }
 
+.mobile-link {
+    color: #1BA3DC;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s ease;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.mobile-link strong {
+    color: #1BA3DC;
+    font-weight: 700;
+}
+
+.mobile-link:hover {
+    opacity: 0.8;
+}
+
+.mobile-icon-img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
 /* ----- PAYMENT OPTIONS ----- */
 .payment-logos {
     display: flex;
@@ -603,6 +629,17 @@ body {
 
     .coupon-card {
         padding: 20px;
+    }
+
+    .best-badge {
+        top: 12px;
+        left: 12px;
+        padding: 5px 10px;
+        gap: 4px;
+    }
+
+    .badge-text {
+        font-size: 10px;
     }
 
     .rank-badge {
