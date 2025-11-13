@@ -52,8 +52,16 @@ body {
 /* ----- LEFT COLUMN: LOGO ----- */
 .coupon-logo-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.rank-number {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1a1a1a;
+    line-height: 1;
 }
 
 .casino-logo {
@@ -62,22 +70,12 @@ body {
     background: #f8f9fa;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    overflow: visible;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     position: relative;
-}
-
-.rank-number {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #6b7280;
-    z-index: 11;
 }
 
 .logo-placeholder {

@@ -15,7 +15,8 @@
       "Bash(git commit -m \"Add soccer ball badge with SVG pattern for rank number\")",
       "Bash(git commit -m \"Use soccer ball image (image4.png) with white rank number\")",
       "Bash(git commit -m \"Use clean soccer ball SVG with subtle white rank number overlay\")",
-      "Bash(git commit -m \"Remove soccer ball badge: add simple minimalist rank number on top-left of logo\")"
+      "Bash(git commit -m \"Remove soccer ball badge: add simple minimalist rank number on top-left of logo\")",
+      "Bash(git commit -m \"Move rank number above logo in top-left position\")"
     ],
     "deny": [],
     "ask": []
