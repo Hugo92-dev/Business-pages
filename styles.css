@@ -129,8 +129,8 @@ body {
 }
 
 .casino-logo {
-    width: 180px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     background: #f8f9fa;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
@@ -154,6 +154,13 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 /* ----- CENTER COLUMN: MAIN INFO ----- */
@@ -649,8 +656,8 @@ body {
     }
 
     .casino-logo {
-        width: 160px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .details-content {
@@ -692,8 +699,8 @@ body {
     }
 
     .casino-logo {
-        width: 100%;
-        height: 120px;
+        width: 140px;
+        height: 140px;
     }
 
     .casino-name {
