@@ -59,9 +59,31 @@ body {
 
 .rank-number {
     font-weight: 700;
-    font-size: 20px;
-    color: #1a1a1a;
+    font-size: 18px;
+    color: #ffffff;
     line-height: 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+    position: relative;
+}
+
+.rank-number::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
 }
 
 .casino-logo {
