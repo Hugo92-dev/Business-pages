@@ -572,6 +572,43 @@ body {
     min-width: 90px;
 }
 
+/* ----- TRUST BADGES ----- */
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+    margin-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    flex-wrap: wrap;
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.badge-flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.badge-icon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.badge-label {
+    white-space: nowrap;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
     .coupon-header {
@@ -776,6 +813,24 @@ body {
         grid-template-columns: 1fr;
         gap: 24px;
     }
+
+    .trust-badges {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .trust-badge {
+        font-size: 12px;
+    }
+
+    .badge-flag {
+        width: 18px;
+        height: 18px;
+    }
+
+    .badge-icon {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -884,5 +939,31 @@ body {
         font-size: 11px;
         padding: 10px 14px;
         min-width: 70px;
+    }
+
+    .trust-badges {
+        gap: 10px;
+        padding: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trust-badge {
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .badge-flag {
+        width: 16px;
+        height: 16px;
+    }
+
+    .badge-icon {
+        font-size: 13px;
+    }
+
+    .badge-label {
+        white-space: normal;
+        text-align: center;
     }
 }
