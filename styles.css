@@ -636,7 +636,10 @@ body {
     }
 
     .best-badge {
-        display: none;
+        position: static;
+        display: inline-flex;
+        margin: 0 auto;
+        order: 1.5;
     }
 
     .coupon-header {
@@ -663,7 +666,7 @@ body {
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    /* Rating en deuxième */
+    /* Rating en troisième (après badge) */
     .coupon-main-info {
         order: 2;
         display: flex;
