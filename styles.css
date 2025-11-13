@@ -210,6 +210,13 @@ body {
     line-height: 1.2;
 }
 
+.offer-amount-large {
+    font-size: 40px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
 /* ----- FEATURES LIST ----- */
 .features-list {
     list-style: none;
