@@ -83,6 +83,30 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Update trust badges with dynamic data
+function updateTrustBadges() {
+    // Get current date in France format
+    const today = new Date();
+    const options = { month: 'short', day: 'numeric', year: 'numeric' };
+    const frenchDate = today.toLocaleDateString('en-US', options);
+
+    // Generate random minutes between 4 and 54
+    const randomMinutes = Math.floor(Math.random() * (54 - 4 + 1)) + 4;
+
+    // Update all verified badges
+    const verifiedBadges = document.querySelectorAll('.trust-badge:nth-child(2) .badge-label');
+    verifiedBadges.forEach(badge => {
+        badge.textContent = `Verified on ${frenchDate}`;
+    });
+
+    // Update all last used badges
+    const lastUsedBadges = document.querySelectorAll('.trust-badge:nth-child(3) .badge-label');
+    lastUsedBadges.forEach(badge => {
+        badge.textContent = `Last used ${randomMinutes} mins ago`;
+    });
+}
+
 // Initialize all functionality
 setupMoreInfoButtons();
 setupPromoCodeBoxes();
+updateTrustBadges();
