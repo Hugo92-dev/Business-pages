@@ -70,34 +70,14 @@ body {
     position: relative;
 }
 
-.rank-badge {
-    position: absolute;
-    top: -16px;
-    right: -16px;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
-}
-
-.soccer-ball-icon {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
 .rank-number {
-    position: relative;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #6b7280;
     z-index: 11;
-    font-weight: 700;
-    font-size: 18px;
-    color: #ffffff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .logo-placeholder {
