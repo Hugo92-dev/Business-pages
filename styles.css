@@ -49,8 +49,8 @@ body {
 /* ===== CARD HEADER (Main Content) ===== */
 .coupon-header {
     display: grid;
-    grid-template-columns: auto auto 1fr auto auto;
-    gap: 32px;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 24px;
     align-items: center;
 }
 
