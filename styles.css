@@ -283,7 +283,7 @@ body {
 .offer-label {
     font-size: 15px;
     color: #4b5563;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 2px;
 }
 
@@ -738,14 +738,23 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: stretch;
+        align-items: center;
     }
 
     .rank-column {
-        display: none;
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 80px;
     }
 
-    /* Logo en premier (haut) */
+    .rank-number {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Logo centré */
     .coupon-logo-section {
         order: 1;
         align-items: center;
@@ -758,9 +767,10 @@ body {
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    /* Rating en troisième (après badge) */
+    /* Rating en deuxième (après logo) */
     .coupon-main-info {
         order: 2;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -784,6 +794,7 @@ body {
     /* Welcome offer en troisième */
     .welcome-offer {
         order: 3;
+        width: 100%;
         padding: 20px;
         background: #f3f4f6;
         border-radius: 12px;
@@ -801,22 +812,30 @@ body {
     /* Features en quatrième */
     .features-list {
         order: 4;
+        width: 100%;
         gap: 14px;
-        align-items: flex-start;
+        align-items: center;
         max-width: 320px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .feature-item {
         gap: 10px;
         justify-content: flex-start;
         align-items: center;
+        display: flex;
+        width: 200px;
     }
 
     .check-icon {
         width: 20px;
         height: 20px;
         flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .feature-text {
@@ -828,6 +847,7 @@ body {
     /* Actions en dernier */
     .coupon-actions {
         order: 5;
+        width: 100%;
         gap: 12px;
     }
 
