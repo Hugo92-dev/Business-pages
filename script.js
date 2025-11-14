@@ -106,7 +106,89 @@ function updateTrustBadges() {
     });
 }
 
+// Mobile menu toggle
+function setupMobileMenu() {
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Handle dropdown clicks on mobile
+        const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
+        dropdownItems.forEach(item => {
+            const navLink = item.querySelector('.nav-link');
+
+            navLink.addEventListener('click', (e) => {
+                // On mobile, prevent navigation and toggle dropdown
+                if (window.innerWidth <= 768) {
+                    // Only prevent default if it's not the active link or has dropdown
+                    if (item.classList.contains('dropdown')) {
+                        e.preventDefault();
+                        item.classList.toggle('active');
+
+                        // Close other dropdowns
+                        dropdownItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('active');
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
+        // Close menu when clicking on a dropdown link
+        const dropdownLinks = document.querySelectorAll('.dropdown-link');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                // Close all dropdowns
+                dropdownItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                // Close all dropdowns
+                dropdownItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+            }
+        });
+    }
+}
+
+// Update page title with current month and year
+function updatePageTitle() {
+    const monthYearSpan = document.getElementById('current-month-year');
+
+    if (monthYearSpan) {
+        const now = new Date();
+        const months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        const currentMonth = months[now.getMonth()];
+        const currentYear = now.getFullYear();
+
+        monthYearSpan.textContent = `${currentMonth} ${currentYear}`;
+    }
+}
+
 // Initialize all functionality
 setupMoreInfoButtons();
 setupPromoCodeBoxes();
 updateTrustBadges();
+setupMobileMenu();
+updatePageTitle();
