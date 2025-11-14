@@ -171,18 +171,29 @@ function setupMobileMenu() {
 // Update page title with current month and year
 function updatePageTitle() {
     const monthYearSpan = document.getElementById('current-month-year');
+    const contentMonthYearSpan = document.getElementById('content-month-year');
+
+    const now = new Date();
+    const months = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+
+    const monthsFR = [
+        'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',
+        'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'
+    ];
+
+    const currentMonth = months[now.getMonth()];
+    const currentMonthFR = monthsFR[now.getMonth()];
+    const currentYear = now.getFullYear();
 
     if (monthYearSpan) {
-        const now = new Date();
-        const months = [
-            'January', 'February', 'March', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December'
-        ];
-
-        const currentMonth = months[now.getMonth()];
-        const currentYear = now.getFullYear();
-
         monthYearSpan.textContent = `${currentMonth} ${currentYear}`;
+    }
+
+    if (contentMonthYearSpan) {
+        contentMonthYearSpan.textContent = `${currentMonthFR} ${currentYear}`;
     }
 }
 
